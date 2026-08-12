@@ -1,0 +1,163 @@
+
+
+/* ============================= */
+/* Courses Dashboard */
+/* ============================= */
+
+.courses-dashboard {
+    min-height: 100vh;
+    background: #f8fafc;
+  }
+  
+  
+  /* ============================= */
+  /* Navbar */
+  /* ============================= */
+  
+  .courses-navbar {
+    width: 100%;
+    height: 70px;
+  
+    padding: 0 7%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    background: #ffffff;
+  
+    border-bottom: 1px solid #e5e7eb;
+  
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  
+  /* ============================= */
+  /* Logo */
+  /* ============================= */
+  
+  .courses-logo h2 {
+    margin: 0;
+  
+    font-size: 25px;
+  
+    color: #111827;
+  }
+  
+  .courses-logo h2 span {
+    color: #2563eb;
+  }
+  
+  
+  /* ============================= */
+  /* Navigation */
+  /* ============================= */
+  
+  .courses-nav-links {
+    display: flex;
+  
+    align-items: center;
+  
+    gap: 8px;
+  }
+  
+  .courses-nav-links a {
+    padding: 9px 15px;
+  
+    color: #64748b;
+  
+    text-decoration: none;
+  
+    font-size: 14px;
+  
+    font-weight: 600;
+  
+    border-radius: 7px;
+  
+    transition: all 0.3s ease;
+  }
+  
+  
+  /* Hover */
+  
+  .courses-nav-links a:hover {
+    color: #2563eb;
+  
+    background: #eff6ff;
+  }
+  
+  
+  /* Active */
+  
+  .courses-nav-links a.course-active {
+    color: #ffffff;
+  
+    background: #2563eb;
+  
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+  }
+  
+  
+  /* ============================= */
+  /* Main Content */
+  /* ============================= */
+  
+  .courses-main {
+    max-width: 1200px;
+  
+    margin: auto;
+  
+    padding: 45px 30px;
+  }
+  
+  
+  /* ============================= */
+  /* Responsive */
+  /* ============================= */
+  
+  @media (max-width: 850px) {
+  
+    .courses-navbar {
+      padding: 0 4%;
+    }
+  
+    .courses-nav-links {
+      gap: 3px;
+    }
+  
+    .courses-nav-links a {
+      padding: 8px 9px;
+  
+      font-size: 13px;
+    }
+  
+  }
+  
+  
+  @media (max-width: 650px) {
+  
+    .courses-navbar {
+      height: auto;
+  
+      padding: 15px;
+  
+      flex-direction: column;
+  
+      gap: 15px;
+    }
+  
+    .courses-nav-links {
+      width: 100%;
+  
+      justify-content: center;
+  
+      flex-wrap: wrap;
+    }
+  
+    .courses-main {
+      padding: 30px 15px;
+    }
+  
+  }

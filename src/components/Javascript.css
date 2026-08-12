@@ -1,0 +1,153 @@
+/* ================= Main Course Page ================= */
+
+.js-course-page {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* ================= Course Header ================= */
+  
+  .js-course-header {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  }
+  
+  .js-course-badge {
+    display: inline-block;
+    padding: 7px 15px;
+    background: #fff7ed;
+    color: #ea580c;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .js-course-header h1 {
+    font-size: 35px;
+    color: #111827;
+    margin: 0 0 15px;
+  }
+  
+  .js-course-header p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  
+  /* ================= Course Stats ================= */
+  
+  .js-course-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .js-course-stat {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    transition: 0.3s ease;
+  }
+  
+  .js-course-stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+  
+  .js-course-stat strong {
+    display: block;
+    font-size: 23px;
+    color: #ea580c;
+    margin-bottom: 7px;
+  }
+  
+  .js-course-stat span {
+    color: #64748b;
+    font-size: 14px;
+  }
+  
+  
+  /* ================= Course Content ================= */
+  
+  .js-course-content {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+  }
+  
+  .js-course-content h2 {
+    color: #111827;
+    margin: 0 0 20px;
+    font-size: 25px;
+  }
+  
+  .js-course-content ul {
+    padding-left: 25px;
+    margin: 0;
+  }
+  
+  .js-course-content li {
+    margin-bottom: 12px;
+    color: #475569;
+  }
+  
+  
+  /* ================= Start Course Button ================= */
+  
+  .js-start-course-btn {
+    border: none;
+    padding: 13px 25px;
+    background: #ea580c;
+    color: #ffffff;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .js-start-course-btn:hover {
+    background: #c2410c;
+    transform: translateY(-2px);
+  }
+  
+  
+  /* ================= Responsive ================= */
+  
+  @media (max-width: 700px) {
+  
+    .js-course-page {
+      padding: 15px;
+    }
+  
+    .js-course-stats {
+      grid-template-columns: 1fr;
+    }
+  
+    .js-course-header {
+      padding: 25px;
+    }
+  
+    .js-course-header h1 {
+      font-size: 28px;
+    }
+  
+    .js-course-content {
+      padding: 25px;
+    }
+  }

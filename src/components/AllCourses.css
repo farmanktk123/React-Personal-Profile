@@ -1,0 +1,128 @@
+.course-page {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  
+  /* Header */
+  
+  .course-header {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .course-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: #eff6ff;
+    color: #2563eb;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .course-header h1 {
+    font-size: 35px;
+    color: #111827;
+    margin-bottom: 15px;
+  }
+  
+  .course-header p {
+    color: #64748b;
+    line-height: 1.7;
+    max-width: 700px;
+  }
+  
+  
+  /* Stats */
+  
+  .course-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .course-stats div {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .course-stats strong {
+    display: block;
+    font-size: 22px;
+    color: #2563eb;
+    margin-bottom: 5px;
+  }
+  
+  .course-stats span {
+    color: #64748b;
+    font-size: 14px;
+  }
+  
+  
+  /* Course Content */
+  
+  .course-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #e5e7eb;
+    margin-bottom: 25px;
+  }
+  
+  .course-content h2 {
+    color: #111827;
+    margin-bottom: 20px;
+  }
+  
+  .course-content ul {
+    padding-left: 20px;
+  }
+  
+  .course-content li {
+    margin-bottom: 12px;
+    color: #475569;
+  }
+  
+  
+  /* Button */
+  
+  .start-course-btn {
+    border: none;
+    padding: 13px 25px;
+    background: #2563eb;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .start-course-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+  }
+  
+  
+  /* Responsive */
+  
+  @media (max-width: 700px) {
+  
+    .course-header h1 {
+      font-size: 28px;
+    }
+  
+    .course-stats {
+      grid-template-columns: 1fr;
+    }
+  
+  }

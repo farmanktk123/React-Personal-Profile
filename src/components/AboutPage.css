@@ -1,0 +1,301 @@
+.active {
+  border: 2px solid black;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+
+/* =========================
+   Global
+========================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f8fafc;
+}
+
+
+/* =========================
+   Hero Section
+========================= */
+
+.about-hero {
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #7c3aed
+  );
+
+  color: white;
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 19px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+
+/* =========================
+   About Content
+========================= */
+
+.about-content {
+  max-width: 1150px;
+  margin: auto;
+  padding: 90px 30px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.about-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #64748b;
+  margin-bottom: 15px;
+}
+
+.about-text button {
+  margin-top: 15px;
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.about-text button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   Mission Section
+========================= */
+
+.mission-section {
+  max-width: 1150px;
+  margin: auto;
+  padding: 20px 30px 90px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.mission-card {
+  background: white;
+  padding: 35px 25px;
+  text-align: center;
+
+  border-radius: 15px;
+
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.mission-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.mission-card h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.mission-card p {
+  color: #64748b;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   Statistics
+========================= */
+
+.stats-section {
+  padding: 70px 30px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  text-align: center;
+
+  background: #111827;
+  color: white;
+}
+
+.stat h2 {
+  font-size: 42px;
+  color: #60a5fa;
+  margin-bottom: 8px;
+}
+
+.stat p {
+  color: #cbd5e1;
+  font-size: 16px;
+}
+
+
+/* =========================
+   Call To Action
+========================= */
+
+.about-cta {
+  text-align: center;
+  padding: 90px 20px;
+  background: #eff6ff;
+}
+
+.about-cta h2 {
+  font-size: 38px;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+.about-cta p {
+  max-width: 600px;
+  margin: 0 auto 25px;
+
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.about-cta button {
+  padding: 14px 32px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.about-cta button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 900px) {
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .mission-section {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .about-content {
+    padding: 60px 20px;
+  }
+
+  .about-image img {
+    height: 300px;
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+  }
+
+  .mission-section {
+    padding: 20px 20px 60px;
+  }
+
+  .stats-section {
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 20px;
+  }
+
+  .stat h2 {
+    font-size: 32px;
+  }
+
+  .about-cta h2 {
+    font-size: 30px;
+  }
+
+}
+```
