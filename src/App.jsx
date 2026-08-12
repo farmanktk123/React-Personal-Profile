@@ -8,7 +8,7 @@ import ContactPage from './components/ContactPage';
 import Courses from './components/Courses';
 import Params from './components/Params'
 import HtmlCourse from "./components/HtmlCourse";
-import JavascriptCourse from './components/JavascriptCourse';
+import JavascriptCourse from './components/JavaScriptCourse';
 import TailwindCourse from './components/TailwindCourse';
 import ReactCourse from './components/ReactCourse';
 import CssCourse from './components/CssCourse';
